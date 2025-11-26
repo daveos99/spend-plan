@@ -46,7 +46,7 @@ export const PlanProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const replacePlan: PlanContextValue['replacePlan'] = (plan) => {
-    setData(ensureCategoryAllocations(plan));
+    setData(ensurePlanData(plan));
   };
 
   const value = useMemo<PlanContextValue>(
